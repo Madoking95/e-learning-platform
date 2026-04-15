@@ -15,7 +15,7 @@
 <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
 <script>
-  const courses = [
+const courses = [
   {
     name: "JavaScript Basics",
     progress: 0,
@@ -43,9 +43,10 @@ function displayCourses(data) {
   data.forEach(course => {
     container.innerHTML += `
       <div class="course">
+        <img src="${course.img}" width="100">
         <h3>${course.name}</h3>
         <p>Progress: ${course.progress}%</p>
-        <button onclick="startCourse('${course.name}')">Start</button>
+        <button onclick="openCourse('${course.link}')">Start</button>
       </div>
     `;
   });
@@ -53,8 +54,8 @@ function displayCourses(data) {
 
 displayCourses(courses);
 
-function startCourse(name) {
-  alert("Starting " + name);
+function openCourse(link) {
+  window.location.href = link; // mobile e 100% kaj korbe
 }
 
 document.getElementById("search").addEventListener("input", function() {
@@ -69,5 +70,6 @@ function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
 </script>
+
 </body>
 </html>
