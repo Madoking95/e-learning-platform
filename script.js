@@ -1,7 +1,19 @@
 const courses = [
-  { name: "JavaScript Basics", progress: 0 },
-  { name: "HTML & CSS", progress: 0 },
-  { name: "Python Beginner", progress: 0 }
+  {
+    name: "JavaScript Basics",
+    progress: 0,
+    img: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+  },
+  {
+    name: "HTML & CSS",
+    progress: 0,
+    img: "https://cdn-icons-png.flaticon.com/512/732/732212.png"
+  },
+  {
+    name: "Python Beginner",
+    progress: 0,
+    img: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+  }
 ];
 
 function displayCourses(data) {
