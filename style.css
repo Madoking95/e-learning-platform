@@ -22,10 +22,9 @@ h1 {
 }
 
 #courseList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 ta kore */
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 20px;
 }
 
